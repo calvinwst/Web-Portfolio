@@ -1,15 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
+import Resume from "./Components/Resume";
+import Project from "./Components/Project";
+import ContactForm from "./Components/ContactForm";
+import SlideShow from "./Components/SlideShow";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Nav />
+    {/* <App /> */}
+    <SlideShow />
+    <Resume />
+    <Project />
+    <ContactForm />
+    <Footer />
   </React.StrictMode>
 );
 
